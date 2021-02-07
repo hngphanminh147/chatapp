@@ -8,7 +8,7 @@ public class Constant {
 	
 	public static final String DELIMITER = ":::";
 	public static final String INCOGNITO = ".";
-	public static final String REGISTER = "login";
+	public static final String REGISTER = "register";
 	public static final String LOGIN = "login";
 	public static final String NEW_LOGIN = "new_login";
 	public static final String LOGOUT = "logout";
