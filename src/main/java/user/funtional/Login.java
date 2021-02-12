@@ -97,7 +97,8 @@ public class Login {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				setEnabled(false);
-				new Register(user);
+				Register register = new Register(user);
+				user.setRegister(register);
 			}
 		});
 	}

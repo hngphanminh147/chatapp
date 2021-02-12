@@ -119,6 +119,7 @@ public class Server extends JFrame implements Runnable {
 			obj.put("password", password);
 			
 			writer.write(obj.toJSONString());
+			writer.write(Constant.CR_NL);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

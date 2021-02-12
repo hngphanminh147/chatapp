@@ -46,7 +46,7 @@ public class Register {
 		
 		System.out.println("Register");
 
-		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		window.setBounds(100, 100, 300, 150);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -75,7 +75,8 @@ public class Register {
 		window.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
 				user.getLogin().setEnabled(true);
-				System.exit(0);
+				window.dispose();
+//				System.exit(0);
 			}
 		});
 

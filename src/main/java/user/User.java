@@ -39,6 +39,7 @@ public class User {
 	@Getter
 	private Login login;
 	@Getter
+	@Setter
 	private Register register;
 
 	private JPanel contentPane;
@@ -60,11 +61,11 @@ public class User {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		;
+		
 		listener = new Thread(new UserListener(socket, this));
 		listener.start();
-		this.users = new HashSet<>();
 
+		this.users = new HashSet<>();
 		this.login = new Login(this);
 
 		initComponents();
